@@ -1,0 +1,8 @@
+# Archivos de intercambio
+*~
+
+# Archivos de caché
+.sass-cache
+
+# Archivos comprimidos
+*.tar.gz
