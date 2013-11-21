@@ -4,20 +4,20 @@ require 'pp'
 require 'dm-core'
 require 'dm-migrations'
 
-class user
-	include DataMapper::Resource
-	property:id, Serial
-	property :name, String
-  	property :age, Integer
-  	property :email, String
-  	property :released_on, DateTime
-  
- 	 def released_on=date
-    	 	super Date.strptime(date, '%m/%d/%Y')
-  	 end
-end
-settings.port = ENV['PORT'] || 4567
-enable :sessions
+#class user
+#	include DataMapper::Resource
+#	property:id, Serial
+#	property :name, String
+#  	property :age, Integer
+#  	property :email, String
+# 	property :released_on, DateTime
+#  
+# 	 def released_on=date
+#    	 	super Date.strptime(date, '%m/%d/%Y')
+#  	 end
+#end
+#settings.port = ENV['PORT'] || 4567
+#enable :sessions
 #use Rack::Session::Pool, :expire_after => 2592000
 #set :session_secret, 'super secret'
 
